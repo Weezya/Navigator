@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".views.ResaActivity"></activity>
+        <activity android:name=".views.ProfilActivity" />
+        <activity android:name=".views.ParamActivity" />
+        <activity android:name=".views.ItemdataActivity" />
+        <activity android:name=".views.HelpActivity" />
+        <activity android:name=".views.FeedbActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
