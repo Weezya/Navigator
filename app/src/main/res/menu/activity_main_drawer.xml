@@ -5,33 +5,30 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_prof"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profil" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_resa"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Réservations" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_param"
             android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:title="Paramètres" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Assistance">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
+                android:id="@+id/nav_feedb"
+                android:icon="@drawable/ic_reply_black_24dp"
+                android:title="Feedback" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_error_outline_black_24dp"
+                android:title="Besoin d'aide ?" />
         </menu>
     </item>
 
