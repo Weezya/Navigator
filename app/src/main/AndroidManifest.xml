@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.ResaActivity"></activity>
+        <activity android:name=".views.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBarSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.ResaActivity" />
         <activity android:name=".views.ProfilActivity" />
         <activity android:name=".views.ParamActivity" />
         <activity android:name=".views.ItemdataActivity" />
@@ -19,12 +27,11 @@
             android:name=".views.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

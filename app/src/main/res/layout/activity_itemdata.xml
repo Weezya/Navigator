@@ -29,7 +29,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:text="Nom"
-        android:padding="8dp" />
+        android:padding="4dp" />
 
     <TextView
         android:id="@+id/itemdatadesc"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Description"
-        android:padding="8dp" />
+        android:padding="4dp" />
 
     </LinearLayout>
 
