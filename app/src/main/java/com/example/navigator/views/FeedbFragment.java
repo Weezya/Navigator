@@ -1,14 +1,15 @@
 package com.example.navigator.views;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.navigator.R;
 
-public class ParamActivity extends AppCompatActivity {
+public class FeedbFragment extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_param);
+        setContentView(R.layout.fragment_feedb);
+        getSupportActionBar().setTitle("Feedback");
     }
 }

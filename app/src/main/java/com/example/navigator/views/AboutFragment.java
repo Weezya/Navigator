@@ -1,14 +1,15 @@
 package com.example.navigator.views;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.navigator.R;
 
-public class ProfilActivity extends AppCompatActivity {
+public class AboutFragment extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profil);
+        setContentView(R.layout.fragment_about);
+        getSupportActionBar().setTitle("  ");
     }
 }

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    <menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_prof"
-            android:icon="@drawable/ic_account_circle_black_24dp"
-            android:title="Profil" />
-        <item
-            android:id="@+id/nav_resa"
-            android:icon="@drawable/ic_date_range_black_24dp"
-            android:title="Réservations" />
-        <item
-            android:id="@+id/nav_param"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Paramètres" />
-
-    </group>
-
-    <item android:title="Assistance">
-        <menu>
+        <group android:checkableBehavior="single">
             <item
-                android:id="@+id/nav_feedb"
-                android:icon="@drawable/ic_reply_black_24dp"
-                android:title="Feedback" />
+                android:id="@+id/nav_pokedex"
+                android:icon="@drawable/ic_album_black_24dp"
+                android:title="Pokedex" />
             <item
-                android:id="@+id/nav_help"
-                android:icon="@drawable/ic_error_outline_black_24dp"
-                android:title="Besoin d'aide ?" />
-        </menu>
-    </item>
+                android:id="@+id/nav_maps"
+                android:icon="@drawable/ic_map_black_24dp"
+                android:title="Map" />
+        </group>
 
-</menu>
+        <item android:title="Work in Progress">
+            <menu>
+                <item
+                    android:id="@+id/nav_feedb"
+                    android:icon="@drawable/ic_reply_black_24dp"
+                    android:title="Feedback" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    android:title="About" />
+            </menu>
+        </item>
+
+    </menu>
+
+
+
+

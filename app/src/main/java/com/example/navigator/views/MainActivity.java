@@ -2,16 +2,16 @@ package com.example.navigator.views;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import android.view.View;
-import android.support.v4.view.GravityCompat;
-import android.support.v7.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Navigator Beta by Loan");
-        listView=findViewById(R.id.listviewshow);
+        getSupportActionBar().setTitle(" ");
+        listView=findViewById(R.id.listViewShow);
         MyAdapter myadapter = new MyAdapter();
         listView.setAdapter(myadapter);
 
@@ -132,16 +132,14 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_prof) {
-            startActivity(new Intent(MainActivity.this, ProfilActivity.class));
-        } else if (id == R.id.nav_resa) {
-            startActivity(new Intent(MainActivity.this, ResaActivity.class));
+        if (id == R.id.nav_pokedex) {
+            startActivity(new Intent(MainActivity.this, PokedexFragment.class));
+        } else if (id == R.id.nav_maps) {
+            startActivity(new Intent(MainActivity.this, MapsFragment.class));
         } else if (id == R.id.nav_feedb) {
-            startActivity(new Intent(MainActivity.this, FeedbActivity.class));
-        } else if (id == R.id.nav_param) {
-            startActivity(new Intent(MainActivity.this, ParamActivity.class));
-        } else if (id == R.id.nav_help) {
-            startActivity(new Intent(MainActivity.this, HelpActivity.class));
+            startActivity(new Intent(MainActivity.this, FeedbFragment.class));
+        } else if (id == R.id.nav_about) {
+            startActivity(new Intent(MainActivity.this, AboutFragment.class));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -167,7 +165,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view1 = getLayoutInflater().inflate(R.layout.item_row_data,null);
+            View view1 = getLayoutInflater().inflate(R.layout.item_row_data, null);
 
             TextView name = view1.findViewById(R.id.itemNameRow);
             TextView desc = view1.findViewById(R.id.itemDescRow);

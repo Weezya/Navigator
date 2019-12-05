@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Navigator</string>
+    <string name="app_name">Pokedex</string>
     <string name="navigation_drawer_open">Ouvrir</string>
     <string name="navigation_drawer_close">Fermer</string>
-    <string name="nav_header_title">Weezy</string>
-    <string name="nav_header_subtitle">L\'animal sauvage</string>
-    <string name="nav_header_desc">Navigator</string>
+    <string name="nav_header_title">Satoshi (サトシ)</string>
+    <string name="nav_header_subtitle"> Pokémon Master</string>
+    <string name="nav_header_desc"> = Menu = </string>
     <string name="action_settings">Trier par</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="nav_header_subtitle_2">\"Gotta Catch \'Em All\"</string>
 </resources>
