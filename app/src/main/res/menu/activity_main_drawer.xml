@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
     <menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <group android:checkableBehavior="single">
             <item
-                android:id="@+id/nav_pokedex"
-                android:icon="@drawable/ic_album_black_24dp"
-                android:title="Pokedex" />
+                android:id="@+id/nav_home"
+                android:icon="@drawable/menu_ic_home"
+                android:title="@string/menuhome" />
             <item
                 android:id="@+id/nav_maps"
-                android:icon="@drawable/ic_map_black_24dp"
-                android:title="Map" />
+                android:icon="@drawable/menu_ic_map"
+                android:title="@string/menumap" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/menu_ic_share"
+                android:title="@string/menuabout" />
         </group>
 
-        <item android:title="Work in Progress">
-            <menu>
-                <item
-                    android:id="@+id/nav_feedb"
-                    android:icon="@drawable/ic_reply_black_24dp"
-                    android:title="Feedback" />
-                <item
-                    android:id="@+id/nav_about"
-                    android:icon="@drawable/ic_share_black_24dp"
-                    android:title="About" />
-            </menu>
-        </item>
+    <item>
+        <menu>
+            <item
+                android:id="@+id/nav_pokedex"
+                android:icon="@drawable/menu_ic_pok"
+                android:title="@string/menupok" />
+            <item
+                android:id="@+id/nav_list"
+                android:icon="@drawable/menu_ic_photo"
+                android:title="@string/menupic" />
+            <item
+                android:id="@+id/nav_log"
+                android:icon="@drawable/menu_ic_login"
+                android:title="@string/menulog" />
+        </menu>
+    </item>
 
     </menu>
 

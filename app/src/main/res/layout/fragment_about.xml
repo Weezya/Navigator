@@ -5,41 +5,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".views.AboutFragment"
-    android:padding="20dp"
-    android:orientation="vertical">
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_about">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/boarding"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vibur"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="56dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Android Application"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Navigator Android Application"
-        android:textSize="20sp"/>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/textView22"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Pokedex\n- Map"
-        android:textSize="20sp"/>
-
-    <TextView
-        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
         android:text="Developed by Weezya"
+        android:textColor="@color/colorWhite"
         android:textSize="20sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="https://github.com/Weezya"
+        android:text="IT Student at ESIEA"
+        android:textColor="@color/colorWhite"
         android:textSize="20sp"
-        android:textStyle="italic" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="https://github.com/Weezya/"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments (on Main):"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Home (Sample)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Map (Google API)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- About (Here we go again)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activities:"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Pokedex (Pokémon API + RecyclerView + Grid)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Gallery (ListView with item detail)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Login (Sample)"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
 
 </LinearLayout>

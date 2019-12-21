@@ -11,23 +11,26 @@ import com.example.navigator.R;
 public class ItemdataActivity extends AppCompatActivity {
 
     TextView name;
+    TextView place;
     TextView desc;
     ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_itemdata);
+        setContentView(R.layout.list_item_data);
 
-        getSupportActionBar().setTitle("Informations");
+        // getSupportActionBar().setTitle("Informations");
 
-        name=findViewById(R.id.itemdataname);
-        desc=findViewById(R.id.itemdatadesc);
-        image=findViewById(R.id.itemdataimg);
+        name=findViewById(R.id.itemName);
+        place=findViewById(R.id.itemPlace);
+        desc=findViewById(R.id.itemDesc);
+        image=findViewById(R.id.itemPhoto);
 
         Intent intent = getIntent();
 
         name.setText(intent.getStringExtra("name"));
+        place.setText(intent.getStringExtra("place"));
         desc.setText(intent.getStringExtra("desc"));
         image.setImageResource(intent.getIntExtra("image",0));
     }

@@ -1,11 +1,29 @@
 <resources>
-    <string name="app_name">Pokedex</string>
+    <string name="app_name">Navigator </string>
     <string name="navigation_drawer_open">Ouvrir</string>
     <string name="navigation_drawer_close">Fermer</string>
-    <string name="nav_header_title">Satoshi (サトシ)</string>
+    <string name="nav_header_name">Satoshi</string>
     <string name="nav_header_subtitle"> Pokémon Master</string>
-    <string name="nav_header_desc"> = Menu = </string>
+    <string name="nav_header_subtitle2"> = Menu = </string>
     <string name="action_settings">Trier par</string>
     <string name="title_activity_maps">Map</string>
     <string name="nav_header_subtitle_2">\"Gotta Catch \'Em All\"</string>
+    <string name="menupok">Pokedex</string>
+    <string name="menumap">Map</string>
+    <string name="menuhome">Home</string>
+    <string name="menuabout">About</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcomeb">Welcome back </string>
+    <string name="action_register">Don\'t have an account ? Register here</string>
+    <string name="menupic">Gallery</string>
+    <string name="menulog">Login</string>
+    <string name="navidea">This application offers various features using fragments and activities.\nWork still in Progress</string>
 </resources>

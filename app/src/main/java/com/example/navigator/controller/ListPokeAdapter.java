@@ -30,7 +30,7 @@ public class ListPokeAdapter extends RecyclerView.Adapter<ListPokeAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_pokemon, parent, false);
+                .inflate(R.layout.pokedex_item, parent, false);
         return new ViewHolder(view);
     }
 

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/headerView"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/vibur"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:textStyle="italic" />
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCode4"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="2dp">
+
+                <EditText
+                    android:layout_gravity=""
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Search"
+                    android:padding="12dp"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:drawableLeft="@drawable/home_search"
+                    android:drawablePadding="8dp"
+
+                    android:background="#00000000"
+                    android:hint="Username"
+                    android:textColorHint="@color/colorWhite"
+                    android:selectAllOnFocus="true"
+
+                    />
+                
+            </androidx.cardview.widget.CardView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPageHeader"
+                android:foregroundGravity="center"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:layout_below="@id/cardSearch"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardSearch"
+                android:layout_margin="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:paddingTop="30dp"
+                        android:id="@+id/itemImgRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/navidea"
+                        android:scaleType="centerCrop"/>
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="128dp"
+                            android:cropToPadding="true"
+                            android:src="@drawable/gradient_shadow" />
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:foregroundGravity="center"
+                            android:gravity="center">
+                            <TextView
+                                android:padding="4dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="24dp"
+                                android:textStyle="italic"
+                                android:text="@string/navidea"
+                                android:fontFamily="@font/vibur"
+                                android:textColor="@color/colorWhite" />
+                        </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/titleCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPageHeader"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="18dp"
+                android:text="Application Features :"
+                android:fontFamily="@font/vibur"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+
+            <include android:id="@+id/homefeatures"
+                layout="@layout/home_features_grid" />
+        </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

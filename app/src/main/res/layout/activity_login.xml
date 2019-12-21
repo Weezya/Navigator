@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/username"
+        android:padding="10dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="#44000000"
+        android:hint="Username"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_account_box"
+        android:drawablePadding="6dp"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:padding="10dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="#44000000"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_lock_outline"
+        android:drawablePadding="6dp"
+
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:id="@+id/login"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorSoftBlue"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:text="@string/action_login" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_register"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorFacebook"
+            android:text="Facebook"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/log_facebook"
+            android:paddingHorizontal="10dp"/>
+        <Button
+            android:clickable="true"
+            android:id="@+id/twitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorTwitter"
+            android:text="Twitter"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/log_twitter"
+            android:paddingHorizontal="12dp"/>
+        <Button
+            android:clickable="true"
+            android:id="@+id/instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorInstagram"
+            android:text="Instagram"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/log_instagram"
+            android:paddingHorizontal="10dp"/>
+    </LinearLayout>
+</LinearLayout>
