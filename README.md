@@ -28,10 +28,10 @@ https://github.com/Weezya/Navigator
 
 ## Fonctionnalités détaillées
 
-Ce projet a été crée avec l’activité Navigation Drawer générée par Android Studio comporenant un menu avec 6 éléments : Home, Map, About, Pokedex, Gallery et Login. Il y a également deux activités complémentaires : Splash et ItemData
+Ce projet a été créé avec l’activité Navigation Drawer générée par Android Studio comprenant un menu avec 6 éléments : Home, Map, About, Pokedex, Gallery et Login. Il y a également deux activités complémentaires : Splash et ItemData
  
 
-- 3 Fragments fonctionnant dans l’activité Main : 
+- 3 Fragments fonctionnant dans l’activité Main
     - Home = Écran d'accueil simple
         - NestedScrollView + CardView + RelativeLayout + ...
     - Map = Service de cartographie en ligne
@@ -44,7 +44,7 @@ Ce projet a été crée avec l’activité Navigation Drawer générée par Andr
         - Rappel des fonctionnalités
         - LinearLayout simple et efficace
 
-- 3 activités attachés au menu
+- 3 activités attachées au menu
     - Pokedex = Liste des 964 Pokémons
         - Instance de Pokémon et adaptateur pour chaque
         - Call de l'API avec Retrofit et conversion GSON avec accès Internet
