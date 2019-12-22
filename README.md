@@ -1,13 +1,14 @@
 # Navigator
 ### by Weezya
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![version](https://img.shields.io/badge/version-1.1.0-blue.svg)
 
 - Application Mobile Android réalise avec Android Studio
 - Navigateur d'activités et de fragments en Front-End
 - Projet d'étude 4A à l'ESIEA encadré par M. VINCENT (Dev Mobile chez ENGIE)
 - Approfondissement de bases de programmation mobile vues en 3A
 
+https://github.com/Weezya/Navigator
 
 ## Table of Contents
 
@@ -21,28 +22,27 @@
 
 ## Démonstration
 
-(Work in Progress)
+
+![Features](Demo.gif)
 
 
 ## Fonctionnalités détaillées
 
-Projet crée avec l’activité Navigation Drawer générée par Android Studio
-Un menu avec 6 éléments : Home, Map, About, Pokedex, Gallery et Login
-Deux activités complémentaires
+Ce projet a été crée avec l’activité Navigation Drawer générée par Android Studio comporenant un menu avec 6 éléments : Home, Map, About, Pokedex, Gallery et Login. Il y a également deux activités complémentaires : Splash et ItemData
+ 
 
 - 3 Fragments fonctionnant dans l’activité Main : 
     - Home = Écran d'accueil simple
         - NestedScrollView + CardView + RelativeLayout + ...
-        - Header avec barre de recherche factice (Work in Progress)
     - Map = Service de cartographie en ligne
         - Généré avec Android Studio
         - Google API Service avec accès Internet
         - Création d'une clé API
             - https://console.developers.google.com/?hl=FR
     - About = Informations sur Navigator
-        - LinearLayout simple et efficace
         - Signature de l'application
         - Rappel des fonctionnalités
+        - LinearLayout simple et efficace
 
 - 3 activités attachés au menu
     - Pokedex = Liste des 964 Pokémons
@@ -54,18 +54,17 @@ Deux activités complémentaires
         - Gestion de Layout avec une grille de 3 colonnes
         - Chargement par blocs de 20 avec le Scroll
         - RecyclerView + AppBar/Toolbar + ...
-        - Barre de recherche factice (Work in Progress)
     - Gallery = Liste de paysages
         - Hard coded data with Adapter : Name, Place, Description, Image
         - Adaptateur pour chaque élément de la liste
+        - Calendrier au-dessus de la liste
         - ListView + CardView + ConstraintLayout + CoordinatorLayout + ...
-        - Bouton pour ajouter un élément factice (Work in Progress)
     - Login = Page d'authentification
         - Généré avec Android Studio
         - Retourne une notification "Welcome back Satoshi" après connexion
         - Page d’enregistrement manquante
         - LinearLayout + EditText + Button + ...
-        - Boutons pour les réseaux sociaux factice (Work in Progress)
+
 
 - 1 activité lancée au démarrage de l'application
     - Splash = Chargement de l'application
@@ -77,7 +76,6 @@ Deux activités complémentaires
         - Ouverture du détail lors de la sélection d'un élément dans Gallery
         - Utilisation d'un Intent pour traduire les données de la liste
         - CollapsingToolbarLayout + NestedScrollView + CardView + ...
-        - Boutons Youtube et Share factices (Work in Progress)
 
 
 ## Design
@@ -85,25 +83,22 @@ Deux activités complémentaires
 - Travail effectué tout au long du projet et à la fin pour les tests d'affichage
 - Le travail sur XML met parfois plus de temps que la programmation du Java
 - Différents éléments personnalisé et cherché sur Internet :
-    - color + size + fonts
-    - icones + photos + parallax
+    - colors + size + fonts
+    - icones + photos + parallax + buttons
     - gradients + animations
-    - agencement des couches
+    - layout management
 
 Découverte des shimmer Facebook (Work in Progress)
 
 
 ## Catalogue de Navigator
 
-(Work in Progress)
+
+### Activité Splash
+![Features](Splash.gif)
 
 
 ## Démarche de développement Mobile
-
-- Projet entièrement réalisé par Weezya
-- Beaucoup d'heures passés sur le projet durant 3 mois
-- Mixage de documentations, de tutoriels et de travaux personnels adaptatifs
-
 
 * Début : Navigation Drawer
     - Premier prototype d'application effectué pendant les vacances avec l'activité Navigation Drawer
@@ -136,7 +131,9 @@ Entre les systèmes Windows et Mac, Android Studio ne génère pas la même acti
 
 Il faut toujours faire un backup avant de faire des folies avec son code : soit tout le projet entre chaque grandes étapes, soit des bouts de codes pour les changements partiels. Sublime Text est un très bon outil pour cela et il possède des codes couleurs pour s'y retrouver et comparer des lignes. Beaucoup de problèmes sont résolus après avoir tourné en rond autour de la solution.
 
-Le projet est toujours en voie de développement
+Le projet est toujours en voie de développement.
+
+> Work in Progress
 
 
 ## Structuration du projet
@@ -145,6 +142,7 @@ Le projet est toujours en voie de développement
 - Beaucoup de ressources pour le design
 
 ```
+Android
 ├───App
 │   │ 
 │   ├───AndroidManifest
