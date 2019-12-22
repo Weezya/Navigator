@@ -12,7 +12,7 @@ public class LoginDataSource {
     public Result<LoggedInUser> login(String username, String password) {
 
         try {
-            // TODO: handle loggedInUser authentication
+
             LoggedInUser fakeUser =
                     new LoggedInUser(
                             java.util.UUID.randomUUID().toString()," Satoshi");
@@ -23,6 +23,6 @@ public class LoginDataSource {
     }
 
     public void logout() {
-        // TODO: revoke authentication
+
     }
 }

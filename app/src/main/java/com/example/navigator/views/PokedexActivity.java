@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import com.example.navigator.R;
 import com.example.navigator.controller.PokeapiService;
-import com.example.navigator.controller.ListPokeAdapter;
+import com.example.navigator.controller.PokeAdapter;
 import com.example.navigator.models.Pokemon;
 import com.example.navigator.models.PokemonRequest;
 import com.google.android.material.snackbar.Snackbar;
@@ -32,7 +32,7 @@ public class PokedexActivity extends AppCompatActivity {
     private Retrofit retrofit;
 
     private RecyclerView recyclerView;
-    private ListPokeAdapter listPokeAdapter;
+    private PokeAdapter pokeAdapter;
 
     private int offset;
     private boolean readyToLoad;
@@ -58,8 +58,8 @@ public class PokedexActivity extends AppCompatActivity {
         // === Recycler View ===
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        listPokeAdapter = new ListPokeAdapter(this);
-        recyclerView.setAdapter(listPokeAdapter);
+        pokeAdapter = new PokeAdapter(this);
+        recyclerView.setAdapter(pokeAdapter);
         recyclerView.setHasFixedSize(true);
         final GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
@@ -80,7 +80,7 @@ public class PokedexActivity extends AppCompatActivity {
 
                             readyToLoad = false;
                             offset += 20;
-                            obtainData(offset);
+                            fetchData(offset);
                         }
                     }
                 }
@@ -93,10 +93,10 @@ public class PokedexActivity extends AppCompatActivity {
 
         readyToLoad = true;
         offset = 0;
-        obtainData(offset);
+        fetchData(offset);
         }
 
-    private void obtainData(int offset) {
+    private void fetchData(int offset) {
 
         PokeapiService service = retrofit.create(PokeapiService.class);
         Call<PokemonRequest> pokemonRequestCall = service.obtainListPokemon(20,offset);
@@ -115,7 +115,7 @@ public class PokedexActivity extends AppCompatActivity {
                         Log.i(TAG, " Pokemon: "+ p.getName());
                     }
 
-                    listPokeAdapter.moreListPokemon(listPokemon);
+                    pokeAdapter.moreListPokemon(listPokemon);
 
                 } else {
                     Log.e(TAG, " onResponse: " + response.errorBody());

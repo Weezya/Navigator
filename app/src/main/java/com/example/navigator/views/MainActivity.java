@@ -15,9 +15,10 @@ import com.example.navigator.R;
 
 /*
 
-        Developed by Weezya
+        Developed by Loan
+        GitHub : Weezya
         December 2019
-        GitHub :
+
 
         */
 

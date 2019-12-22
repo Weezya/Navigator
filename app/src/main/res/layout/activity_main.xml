@@ -46,7 +46,7 @@
         app:menu="@menu/activity_main_drawer"
         app:itemTextAppearance="@style/ItemMenuAppearance"
         app:itemTextColor="@color/colorWhite"
-        android:background="@color/colorCode2"
+        android:background="@color/colorCode22"
         app:itemIconTint="@color/colorWhite"
         app:itemHorizontalPadding="30dp"
         app:itemIconPadding="20dp"/>

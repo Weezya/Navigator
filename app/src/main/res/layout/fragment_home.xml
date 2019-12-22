@@ -9,8 +9,8 @@
     <androidx.core.widget.NestedScrollView
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/gradient"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_list"
         android:fitsSystemWindows="true">
 
         <LinearLayout
@@ -21,13 +21,13 @@
         <RelativeLayout
             android:id="@+id/headerView"
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbarAlwaysDrawVerticalTrack="true">
-            
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:background="@color/colorPrimary" />
 
             <TextView
@@ -47,7 +47,7 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="48dp"
                 android:textStyle="italic" />
-            
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardSearch"
                 android:layout_below="@+id/title"
@@ -55,33 +55,31 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardBackgroundColor="@color/colorCode4"
+                app:cardBackgroundColor="@color/colorCode22"
                 app:cardCornerRadius="26dp"
                 app:cardElevation="2dp">
 
                 <EditText
-                    android:layout_gravity=""
+                    android:layout_gravity="center"
                     android:id="@+id/editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Search"
                     android:padding="12dp"
-                    android:textSize="16dp"
+                    android:textSize="18dp"
                     android:layout_marginLeft="6dp"
                     android:gravity="center_vertical"
                     android:textColor="@color/colorWhite"
                     android:drawableLeft="@drawable/home_search"
                     android:drawablePadding="8dp"
-
                     android:background="#00000000"
-                    android:hint="Username"
+                    android:hint="Search"
                     android:textColorHint="@color/colorWhite"
                     android:selectAllOnFocus="true"
 
                     />
-                
+
             </androidx.cardview.widget.CardView>
 
             <androidx.viewpager.widget.ViewPager
@@ -104,7 +102,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="140dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
@@ -112,13 +110,12 @@
                     android:layout_marginRight="4dp"
                     android:layout_marginBottom="10dp"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="6dp">
 
                     <ImageView
-                        android:paddingTop="30dp"
                         android:id="@+id/itemImgRow"
                         android:layout_width="match_parent"
-                        android:layout_height="140dp"
+                        android:layout_height="match_parent"
                         app:srcCompat="@drawable/navidea"
                         android:scaleType="centerCrop"/>
 
@@ -141,17 +138,16 @@
                             android:foregroundGravity="center"
                             android:gravity="center">
                             <TextView
-                                android:padding="4dp"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginBottom="15dp"
                                 android:layout_marginLeft="10dp"
+                                android:paddingLeft="10dp"
                                 android:layout_marginRight="10dp"
-                                android:layout_alignParentBottom="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="24dp"
-                                android:textStyle="italic"
+                                android:textSize="18dp"
                                 android:text="@string/navidea"
-                                android:fontFamily="@font/vibur"
+                                android:textStyle="italic"
                                 android:textColor="@color/colorWhite" />
                         </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -163,14 +159,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/viewPageHeader"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="28dp"
                 android:layout_marginRight="16dp"
                 android:paddingLeft="18dp"
                 android:text="Application Features :"
-                android:fontFamily="@font/vibur"
                 android:textColor="@color/colorWhite"
-                android:textSize="24dp"
-                android:textStyle="italic" />
+                android:textSize="18dp" />
 
             <include android:id="@+id/homefeatures"
                 layout="@layout/home_features_grid" />

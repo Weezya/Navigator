@@ -2,17 +2,19 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#2A3c58</color>
+    <color name="colorAccent">#5159A5</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorSoftBeige">#BB9973</color>
+    <color name="colorSoftBeige">#CE6E61</color>
     <color name="colorSoftBlue">#81A2BE</color>
     <color name="colorSoftGreen">#9DCC89</color>
     <color name="colorSplash">#623586</color>
+    <color name="colorSplash0">#A24FE7</color>
     <color name="colorShape1">#00000000</color>
     <color name="colorShape2">#34000000</color>
     <color name="colorShape3">#B4000000</color>
     <color name="colorCode1">#3D5069</color>
-    <color name="colorCode2">#2A3c58</color>
+    <color name="colorCode2">#2E6197</color>
+    <color name="colorCode22">#2A3c58</color>
     <color name="colorCode3">#122036</color>
     <color name="colorCode4">#4C4955</color>
     <color name="colorFacebook">#3b5998</color>
@@ -20,5 +22,8 @@
     <color name="colorInstagram">#cd486b</color>
     <color name="colorSplash2">#381766</color>
     <color name="colorSoftBlue2">#9AC3E9</color>
+    <color name="colorFade">#EB6E70</color>
+    <color name="colorSky">#4C95B5</color>
+    <color name="colorCode5">#4F6074</color>
 
 </resources>

@@ -15,13 +15,13 @@ import com.example.navigator.models.Pokemon;
 
 import java.util.ArrayList;
 
-public class ListPokeAdapter extends RecyclerView.Adapter<ListPokeAdapter.ViewHolder> {
+public class PokeAdapter extends RecyclerView.Adapter<PokeAdapter.ViewHolder> {
 
     private ArrayList<Pokemon> mDataset;
     private Context context;
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListPokeAdapter(Context context){
+    public PokeAdapter(Context context){
         this.context = context;
         mDataset = new ArrayList<>();
     }

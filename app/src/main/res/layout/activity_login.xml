@@ -69,6 +69,9 @@
     <TextView
         android:layout_marginTop="40dp"
         android:clickable="true"
+        android:contextClickable="true"
+        android:linksClickable="true"
+        android:longClickable="true"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -25,5 +25,7 @@
     <string name="action_register">Don\'t have an account ? Register here</string>
     <string name="menupic">Gallery</string>
     <string name="menulog">Login</string>
-    <string name="navidea">This application offers various features using fragments and activities.\nWork still in Progress</string>
+    <string name="navidea">This application offers various features using
+                            fragments and activities by using a Navigation Drawer.
+                            \nWork still in Progress\n</string>
 </resources>

@@ -41,12 +41,12 @@ public class ListActivity extends AppCompatActivity{
     };
 
     String[] itemDesc = {
-            "(French)\nAdmirer les étoiles dans un espace loin de la ville et se griller quelques guimauves autour d'un feu",
-            "Vasco da Gama Bridge\n(French)\nMagnifique pont où l'on peut admirer le cours d'eau, conçu par les plus grands ingénieurs",
-            "(French)\nContourner la côte en passant par ce magnifique chemin digne de Vice City",
-            "(French)\nAu cœur de la ville, avec ses flux et ses quartiers",
-            "(French)\nUn endroit reculé caché entre des collines, idéal pour se ressourcer et se mettre au vert",
-            "(French)\nVenir se baigner en famille ou avec ses amis et profiter du soleil pour s'amuser ou faire bronzette, sans oublier son maillot de bain"
+            "(French)\n\nAdmirer les étoiles dans un espace loin de la ville et se griller quelques guimauves autour d'un feu",
+            "(French)\n\nContourner la côte en passant par ce magnifique chemin digne de Vice City",
+            "Vasco da Gama Bridge\n\n(French)\n\nMagnifique pont où l'on peut admirer le cours d'eau, conçu par les plus grands ingénieurs",
+            "(French)\n\nAu cœur de la ville, avec ses flux et ses quartiers",
+            "(French)\n\nUn endroit reculé caché entre des collines, idéal pour se ressourcer et se mettre au vert",
+            "(French)\n\nVenir se baigner en famille ou avec ses amis et profiter du soleil pour s'amuser ou faire bronzette, sans oublier son maillot de bain"
             };
 
     int[] itemImg = {

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,22 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:padding="20dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/boarding"/>
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_nav"/>
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vibur"
             android:gravity="center"
+            android:padding="8dp"
             android:text="@string/app_name"
             android:textColor="@color/colorWhite"
-            android:textSize="56dp"
+            android:textSize="54dp"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -49,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Developed by Weezya"
+        android:text="Developed by Loan"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -74,69 +78,4 @@
         android:textSize="16sp"
         android:textStyle="italic"
         android:textColor="@color/colorWhite"/>
-
-    <TextView
-        android:layout_marginTop="40dp"
-        android:paddingLeft="10dp"
-        android:id="@+id/textView21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragments (on Main):"
-        android:textSize="16sp"
-        android:textColor="@color/colorWhite"
-        android:layout_marginBottom="8dp"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Home (Sample)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Map (Google API)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- About (Here we go again)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:id="@+id/textView23"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Activities:"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"
-        android:layout_marginBottom="8dp"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Pokedex (Pokémon API + RecyclerView + Grid)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Gallery (ListView with item detail)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-    <TextView
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="- Login (Sample)"
-        android:textSize="16dp"
-        android:textColor="@color/colorWhite"/>
-
 </LinearLayout>

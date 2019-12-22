@@ -17,8 +17,8 @@
         android:id="@+id/linesplash">
 
         <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_gravity="center"
             android:src="@drawable/boarding"
             android:id="@+id/ivsplash"/>
