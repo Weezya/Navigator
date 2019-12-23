@@ -94,8 +94,17 @@ Découverte des shimmer Facebook (Work in Progress)
 ## Catalogue de Navigator
 
 
-### Activité Splash
-![Features](Splash.gif)
+| Splash       | Menu           | Home          |
+|     :---:    |     :---:      |     :---:     |
+|![Features](Splash.gif)|![Features](Navigation.png)|![Features](Home.png)|
+
+| Map          | About          | Pokedex       |
+|     :---:    |     :---:      |     :---:     |
+|![Features](Map.png)|![Features](About.png)|![Features](Pokedex.png)|
+
+| Gallery      | ItemData       | Login         |
+|     :---:    |     :---:      |     :---:     |
+|![Features](Gallery.png)|![Features](ItemData.png)|![Features](Login.png)|
 
 
 ## Démarche de développement Mobile
@@ -133,7 +142,7 @@ Il faut toujours faire un backup avant de faire des folies avec son code : soit 
 
 Le projet est toujours en voie de développement.
 
-> Work in Progress
+> "Work still in Progress"
 
 
 ## Structuration du projet
