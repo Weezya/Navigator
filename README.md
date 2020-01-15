@@ -23,7 +23,7 @@ https://github.com/Weezya/Navigator
 ## Démonstration
 
 
-![Features](Demo.gif)
+![Features](preview/Demo.gif)
 
 
 ## Fonctionnalités détaillées
@@ -96,15 +96,15 @@ Découverte des shimmer Facebook (Work in Progress)
 
 | Splash       | Menu           | Home          |
 |     :---:    |     :---:      |     :---:     |
-|![Features](Splash.gif)|![Features](Navigation.png)|![Features](Home.png)|
+|![Features](preview/Splash.gif)|![Features](preview/Navigation.png)|![Features](preview/Home.png)|
 
 | Map          | About          | Pokedex       |
 |     :---:    |     :---:      |     :---:     |
-|![Features](Map.png)|![Features](About.png)|![Features](Pokedex.png)|
+|![Features](preview/Map.png)|![Features](preview/About.png)|![Features](preview/Pokedex.png)|
 
 | Gallery      | ItemData       | Login         |
 |     :---:    |     :---:      |     :---:     |
-|![Features](Gallery.png)|![Features](ItemData.png)|![Features](Login.png)|
+|![Features](preview/Gallery.png)|![Features](preview/ItemData.png)|![Features](preview/Login.png)|
 
 
 ## Démarche de développement Mobile
