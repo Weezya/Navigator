@@ -93,18 +93,21 @@ Découverte des shimmer Facebook (Work in Progress)
 
 ## Catalogue de Navigator
 
+| Splash       | Home          |
+|     :---:    |     :---:     |
+|![Features](preview/Splash.gif)|![Features](preview/Home.png)|
 
-| Splash       | Menu           | Home          |
-|     :---:    |     :---:      |     :---:     |
-|![Features](preview/Splash.gif)|![Features](preview/Navigation.png)|![Features](preview/Home.png)|
+| Menu         | Login         |
+|     :---:    |     :---:     |
+|![Features](preview/Navigation.png)|![Features](preview/Login.png)|
 
-| Map          | About          | Pokedex       |
-|     :---:    |     :---:      |     :---:     |
-|![Features](preview/Map.png)|![Features](preview/About.png)|![Features](preview/Pokedex.png)|
+| Gallery      | Description    |
+|     :---:    |     :---:      |
+|![Features](preview/Gallery.png)|![Features](preview/ItemData.png)|
 
-| Gallery      | ItemData       | Login         |
-|     :---:    |     :---:      |     :---:     |
-|![Features](preview/Gallery.png)|![Features](preview/ItemData.png)|![Features](preview/Login.png)|
+| Map          | Pokedex       |
+|     :---:    |     :---:     |
+|![Features](preview/Map.png)|![Features](preview/Pokedex.png)|
 
 
 ## Démarche de développement Mobile
